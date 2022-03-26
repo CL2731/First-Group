@@ -1,20 +1,25 @@
+
+
 :root {
     --white-text: white;
-    --border-rad30: 30px;
+    --border-rad: 5px;
 }
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgba(37, 27, 27, 0.822);
     color: rgb(205, 87, 221);
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
 }
-h2, section, ul {
+h2, ul {
     border: 1px solid white
 }
 
 main {
     display: flex;
-    /* flex-direction: column;  */
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 header p, li {
     color: white;
@@ -22,18 +27,16 @@ header p, li {
 
 .display-flex {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex: 0 0 400px;
+    align-items: flex-start;
 }
 
 h2 {
-    border-radius: var(--border-rad30);
-    position: relative;
-    display: block;
+    border-radius: var(--border-rad);
     margin-left: auto;
     margin-right: auto;
     margin-top: -16px;
-    max-width: 650px;
+    width: 350px;
 }
 
 .center {
@@ -42,12 +45,63 @@ h2 {
 
 article {
     border: 1px dashed white;
+    margin-top: 30px;
+    align-items: center;
 }
 
-section{
-    max-width: 750px;
-    margin: 20px;
-}
 ul {
     margin: 5px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+
+
+*/
+/*
+
+.row {
+    display:flex;
+    flex-direction:row:
+    flex-wrap:wrap;
+}
+
+.column {}
+    display:flex;
+    flex-direction:column
+}
+
+.grid {
+    display:grid;
+    width:100%;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.linear-gradient-background {
+    background-image:linear-gradient(
+        rgba(232,102,236,0.3)0%,
+        rgba(232,102,236,0.6)100%
+    )
+}
+
+.code-card .card-header {
+    border-radius:8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover, 
+.code-card:hover .card-header {
+    box-shadow: inset Opx 0px 8px
+        rgba(232, 102, 236, 1), 0 0 15px
+        rgba(232, 102, 236, 1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
 }

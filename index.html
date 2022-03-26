@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,107 +11,99 @@
 
 <body>
     <header class="center">
-        <h1>Css Snipit Cheatsheet</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod optio impedit officia explicabo sequi porro inventore voluptatem! Aliquam neque asperiores deserunt sequi illum repellat facere, ducimus totam ipsum sed magni?
-        </p>
-
+        <h1>CSS Snippet Cheatsheet</h1>
+        <p>Ever have trouble recalling the exact syntax for your favorite CWSS code? Give it a permanent home and add it
+            to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
 
     <main>
-
-
-    <section class="display-flex">
-       
-        <article>
-                <h2>place holder</h2>
-            <p> place holder</p>
-            <ul>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-            </ul> 
-        </article>
-    </section>
- 
-    <section class="display-flex">
-      
-        
-        <article>
-              <h2>place holder</h2>
-            <p> place holder</p>
-            <ul>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-            </ul> 
-        </article>
-    </section>
-  
-    <section class="display-flex">
-       
-        
-        <article>
-             <h2>place holder</h2>
-            <p> place holder</p>
-            <ul>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-            </ul> 
-        </article>
-    </section>
-
-    <section class="display-flex">
-      
-        
-        <article>
-              <h2>place holder</h2>
-            <p> place holder</p>
-            <ul>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-            </ul> 
-        </article>
-    </section>
-    
-    <section class="display-flex">
-        
-        
-        <article>
-            <h2>place holder</h2>
-            <p> place holder</p>
-            <ul>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-            </ul> 
-        </article>
-    </section>
-    
-    <section class="display-flex">
-       
-        
-        <article>
-             <h2>place holder</h2>
-            <p> place holder</p>
-            <ul>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-                <li> place </li>
-            </ul> 
-        </article>
-    </section>
-
-</main>
-    <footer> Made with love and Css </footer>
+        <section class="display-flex">
+            <article>
+                <h2>Flexbox Row</h2>
+                <p>Use these three properties to create a Flexbox row layout</p>
+                <ul>
+                    <li>.row {</li>
+                    <li>  display: flex;</li>
+                    <li>  flex-direction: row;</li>
+                    <li>  flex-wrap: wrap;</li>
+                    <li>}</li>
+                </ul>
+            </article>
+        </section>
+        <section class="display-flex">
+            <article>
+                <h2>Flexbox Column</h2>
+                <p>Use this to create a Flexbox column layout.</p>
+                <ul>
+                    <li>.column {</li>
+                    <li>  display: flex;</li>
+                    <li>  flex-direction: column</li>
+                    <li>}</li>
+                </ul>
+            </article>
+        </section>
+        <section class="display-flex">
+            <article>
+                <h2>CSS Grid Layout</h2>
+                <p>Build a 12-column layout using CSS Grid</p>
+                <ul>
+                    <li>.grid {</li>
+                    <li>  display:grid;</li>
+                    <li>  width:100%;</li>
+                    <li>  grid-template-columns: repeat(12,1fr);</li>
+                    <li>}</li>
+                </ul>
+            </article>
+        </section>
+        <section class="display-flex">
+            <article>
+                <h2>Linear Gradients</h2>
+                <p>This will create a background linear gradient from top to bottom.</p>
+                <ul>
+                    <li>.linear-gradient-background {</li>
+                    <li>  background-image:linear-gradient(</li>
+                    <li>  rgba(232,102,236,0.3)0%,</li>
+                    <li>  rgba(232,102,236,0.6)100%</li>
+                    <li>}</li>
+                </ul>
+            </article>
+        </section>
+        <section class="display-flex">
+            <article>
+                <h2>Box Transition Glow</h2>
+                <p>Use transition and box shadows to glow on hover.</p>
+                <ul>
+                    <li>.code-card .card-header {</li>
+                    <li>  border-radius:8px;</li>
+                    <li>  transition: all 0.5s ease-in-out;</li>
+                    <li>}</li>
+                    <br>
+                    <li>.code-card:hover,</li>
+                    <li>.code-card:hover .card-header {</li>
+                    <li>  box-shadow: inset Opx 0px 8px</li>
+                    <li>    rgba(232, 102, 236, 1), 0 0 15px</li>
+                    <li>    rgba(232, 102, 236, 1);</li>
+                    <li>}</li>
+                </ul>
+            </article>
+        </section>
+        <section class="display-flex">
+            <article>
+                <h2>Overlay Card with Title</h2>
+                <p>Use position properties and negative margins to raise elements higher than their natural starting</p>
+                <ul>
+                    <li>.card-header {</li>
+                    <li>  position: relative;</li>
+                    <li>  margin-top: -20px;</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="center">
+        Made with heart and CSS
+    </footer>
 </body>
 
 </html>
+
+
